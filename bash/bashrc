@@ -1,0 +1,18 @@
+# shellcheck shell=bash
+alias wget='wget -c --no-hsts'
+export PATH=~/.local/bin:"$PATH"
+
+[[ $- != *i* ]] && return # interactive section
+eval "$(carapace _carapace)" # completions
+
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias grep='grep --color=auto'
+alias la='eza -a --group-directories-first'
+alias ll='eza -al --group-directories-first'
+alias lt='eza -aTL 3 --group-directories-first'
+
+export FZF_DEFAULT_OPTS='--layout=reverse'
+eval "$(fzf --bash)"
+eval "$(starship init bash)"
+eval "$(zoxide init bash)"

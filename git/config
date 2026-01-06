@@ -1,0 +1,8 @@
+[credential "https://gist.github.com"]
+  helper = !{{gh-binary}} auth git-credential
+[credential "https://github.com"]
+  helper = !{{gh-binary}} auth git-credential
+
+[user]
+  email = 122733139+chen1plus@users.noreply.github.com
+  name = Aaron Chen

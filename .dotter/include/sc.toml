@@ -1,2 +1,5 @@
+[git.variables]
+"gh-binary" = "/home/chen1plus/.local/bin/gh"
+
 [sc.files]
 "sc/eget.toml" = "~/.eget.toml"
