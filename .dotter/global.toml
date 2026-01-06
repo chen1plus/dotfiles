@@ -1,6 +1,7 @@
 [bash.files]
 "bash/bashrc" = "~/.bashrc"
 "bash/profile" = "~/.bash_profile"
+"bash/starship.toml" = "~/.config/starship.toml"
 
 [git.files]
 "git/config" = "~/.config/git/config"
