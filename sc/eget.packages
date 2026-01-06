@@ -17,6 +17,7 @@ koalaman/shellcheck
 muesli/duf
 sharkdp/bat
 sharkdp/fd
+sharkdp/hyperfine
 starship/starship
 watchexec/watchexec
 zellij-org/zellij
