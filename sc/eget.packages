@@ -1,6 +1,9 @@
 ClementTsang/bottom
+It4innovations/hyperqueue
+NixOS/patchelf
 SuperCuber/dotter
 ajeetdsouza/zoxide
+astral-sh/uv
 bootandy/dust
 carapace-sh/carapace-bin
 casey/just
@@ -8,10 +11,14 @@ chmln/sd
 cli/cli
 dandavison/delta
 eza-community/eza
+jqlang/jq
 junegunn/fzf
 koalaman/shellcheck
+muesli/duf
 sharkdp/bat
 sharkdp/fd
 starship/starship
+watchexec/watchexec
+zellij-org/zellij
 zyedidia/eget
 zyedidia/micro
