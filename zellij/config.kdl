@@ -1,0 +1,11 @@
+default_layout "compact"
+pane_frames false
+scrollback_editor "{{micro-binary}}"
+show_startup_tips false
+theme "catppuccin-macchiato"
+
+plugins {
+  compact-bar location="zellij:compact-bar" {
+    tooltip "F1"
+  }
+}

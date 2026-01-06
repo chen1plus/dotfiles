@@ -3,3 +3,6 @@
 
 [sc.files]
 "sc/eget.toml" = "~/.eget.toml"
+
+[zellij.variables]
+"micro-binary" = "/home/chen1plus/.local/bin/micro"

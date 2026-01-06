@@ -5,3 +5,6 @@
 
 [git.files]
 "git/config" = "~/.config/git/config"
+
+[zellij.files]
+"zellij/config.kdl" = "~/.config/zellij/config.kdl"
