@@ -20,6 +20,7 @@ sharkdp/bat
 sharkdp/fd
 sharkdp/hyperfine
 starship/starship
+tealdeer-rs/tealdeer
 watchexec/watchexec
 zellij-org/zellij
 zyedidia/eget
