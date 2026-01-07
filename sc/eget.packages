@@ -15,6 +15,7 @@ jqlang/jq
 junegunn/fzf
 koalaman/shellcheck
 muesli/duf
+prefix-dev/pixi
 sharkdp/bat
 sharkdp/fd
 sharkdp/hyperfine
