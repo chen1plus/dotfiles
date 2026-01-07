@@ -18,7 +18,7 @@ This repository contains configuration files for:
 
 ## Installation
 
-1. Clone this repository:
+1. Clone this repository to your home directory:
    ```bash
    git clone https://github.com/chen1plus/dotfiles.git ~/dotfiles
    cd ~/dotfiles
@@ -60,10 +60,12 @@ The `sc/eget.packages` file contains a curated list of useful CLI tools that can
 - Build tools: `just`, `hyperqueue`
 - And many more...
 
-Update all packages with:
+Update all packages using the included script:
 ```bash
 eget-update
 ```
+
+This script reads from `sc/eget.packages` and updates all listed tools to their latest versions.
 
 ## License
 
