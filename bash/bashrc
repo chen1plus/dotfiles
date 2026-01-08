@@ -11,6 +11,7 @@ alias grep='grep --color=auto'
 alias la='eza -a --group-directories-first'
 alias ll='eza -al --group-directories-first'
 alias lt='eza -aTL 3 --group-directories-first'
+alias tldr='tealdeer'
 
 export FZF_DEFAULT_OPTS='--layout=reverse'
 eval "$(fzf --bash)"
