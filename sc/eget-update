@@ -6,7 +6,7 @@ fi
 
 while read -ru 3 repo; do
   [[ -z "$repo" || "$repo" =~ ^# ]] && continue
-  echo "eget $repo"
-  eget "$repo"
+  echo eget "$repo"
+  # shellcheck disable=SC2086
+  eget $repo
 done 3< '{{eget-packages}}'
-echo Done
