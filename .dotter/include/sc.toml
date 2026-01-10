@@ -1,10 +1,6 @@
 [git.variables]
 "gh-binary" = "/home/chen1plus/.local/bin/gh"
 
-[sc.files]
-"sc/eget.toml" = "~/.eget.toml"
-"sc/eget-update" = "~/.local/bin/eget-update"
-
 [sc.variables]
 "eget-packages" = "/home/chen1plus/dotfiles/sc/eget.packages"
 "eget-pkg-completions" = "/home/chen1plus/dotfiles/sc/eget.pkg.completions"
