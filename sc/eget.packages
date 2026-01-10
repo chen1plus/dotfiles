@@ -1,14 +1,14 @@
---asset musl --file btm      ClementTsang/bottom
---asset tar  --file carapace carapace-sh/carapace-bin
---asset hq  It4innovations/hyperqueue
---asset tar cli/cli
+ClementTsang/bottom
+It4innovations/hyperqueue
 NixOS/patchelf
 SuperCuber/dotter
 ajeetdsouza/zoxide
 astral-sh/uv
 bootandy/dust
+carapace-sh/carapace-bin
 casey/just
 chmln/sd
+cli/cli
 dandavison/delta
 denisidoro/navi
 eza-community/eza
