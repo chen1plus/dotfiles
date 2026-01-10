@@ -46,7 +46,7 @@ function hh {
 while read -r line; do
   [[ -z "$line" || "$line" =~ ^# ]] && continue
   bolt-complete "${line%% *}" "$line"
-done < ~/dotfiles/sc/eget.pkg.completions
+done < {{eget-pkg-completions}}
 
 export FZF_DEFAULT_OPTS='--layout=reverse'
 bolt-eval 'carapace _carapace'
