@@ -17,9 +17,18 @@ curl https://zyedidia.github.io/eget.sh | sh
 eget --to=~/.local/bin SuperCuber/dotter
 ```
 
-Deploy after installing basic utilities.
+Clone the repository and define packages to deploy.
 
 ```bash
 git clone https://github.com/chen1plus/dotfiles.git ~/dotfiles
-cd ~/dotfiles; dotter deploy; eget-update
+cd ~/dotfiles; cat <<EOF >.dotter/local.toml
+includes = [".dotter/include/sc.toml"]
+packages = ["bash", "git", "zellij"]
+EOF
+```
+
+Deploy and install packages.
+
+```bash
+dotter deploy; eget-update
 ```
