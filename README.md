@@ -18,3 +18,8 @@ eget --to=~/.local/bin SuperCuber/dotter
 ```
 
 Deploy after installing basic utilities.
+
+```bash
+git clone https://github.com/chen1plus/dotfiles.git ~/dotfiles
+cd ~/dotfiles; dotter deploy; eget-update
+```
