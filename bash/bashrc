@@ -11,6 +11,13 @@ alias ll='eza -al --group-directories-first'
 alias lt='eza -aTL 3 --group-directories-first'
 alias tldr='tealdeer'
 
+function alive {
+	while true; do
+		echo -n ';'
+		sleep 60
+	done
+}
+
 mkdir -p ~/.cache/bolt
 function bolt-cache {
 	local bin=$1
@@ -41,6 +48,10 @@ function bolt-eval {
 
 function hh {
 	"$@" --help | bat -pl help
+}
+
+function pbcopy {
+	tee >(base64 -w 0 | xargs printf "\e]52;c;%s\a" >&2)
 }
 
 while read -r line; do
