@@ -1,0 +1,37 @@
+[
+  // Cmd + I => Inline AI
+  {
+    "context": "!ContextEditor > (Editor && mode == full)",
+    "bindings": {
+      "cmd-i": "assistant::InlineAssist",
+    },
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "cmd-i": "assistant::InlineAssist",
+    },
+  },
+
+  // Ctrl + Enter => Toggle Terminal
+  {
+    "context": "!ContextEditor > (Editor && mode == full)",
+    "bindings": {
+      "ctrl-enter": "terminal_panel::Toggle",
+    },
+  },
+  {
+    "context": "Terminal || Workspace",
+    "bindings": {
+      "ctrl-enter": "terminal_panel::Toggle",
+    },
+  },
+
+  // Ctrl + Shift + Enter => New Terminal
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-shift-enter": "workspace::NewTerminal",
+    },
+  },
+]

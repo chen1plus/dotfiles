@@ -18,5 +18,9 @@
 "sc/eget.toml" = "~/.eget.toml"
 "sc/eget-update" = "~/.local/bin/eget-update"
 
+[zed.files]
+"zed/keymap.json" = "~/.config/zed/keymap.json"
+"zed/settings.json" = "~/.config/zed/settings.json"
+
 [zellij.files]
 "zellij/config.kdl" = "~/.config/zellij/config.kdl"
