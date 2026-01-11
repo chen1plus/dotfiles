@@ -2,7 +2,7 @@
 
 Personal dotfiles managed with [Dotter](https://github.com/SuperCuber/dotter).
 
-## Installation
+## Quick Start
 
 The following are the setup scripts for various environments.
 
