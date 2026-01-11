@@ -4,6 +4,16 @@ scrollback_editor "{{micro-binary}}"
 show_startup_tips false
 theme "catppuccin-macchiato"
 
+keybinds {
+  unbind "Alt f"
+  shared_except "locked" {
+    bind "Ctrl Alt Down"  { MoveFocus "Down"; }
+    bind "Ctrl Alt Left"  { MoveFocusOrTab "Left"; }
+    bind "Ctrl Alt Right" { MoveFocusOrTab "Right"; }
+    bind "Ctrl Alt Up"    { MoveFocus "Up"; }
+  }
+}
+
 plugins {
   compact-bar location="zellij:compact-bar" {
     tooltip "F1"
