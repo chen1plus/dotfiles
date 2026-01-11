@@ -27,7 +27,7 @@ packages = ["bash", "git", "zellij"]
 EOF
 ```
 
-Deploy and install packages.
+Deploy packages.
 
 ```bash
 dotter deploy; eget-update
