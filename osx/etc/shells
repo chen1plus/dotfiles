@@ -1,0 +1,9 @@
+/bin/bash
+/bin/csh
+/bin/dash
+/bin/ksh
+/bin/sh
+/bin/tcsh
+/bin/zsh
+/opt/homebrew/bin/bash
+/opt/homebrew/bin/fish

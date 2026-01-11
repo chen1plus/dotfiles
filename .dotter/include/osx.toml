@@ -1,0 +1,5 @@
+[git.variables]
+"gh-binary" = "/opt/homebrew/bin/gh"
+
+[zellij.variables]
+"micro-binary" = "/opt/homebrew/bin/micro"
