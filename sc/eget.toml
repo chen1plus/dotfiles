@@ -5,8 +5,10 @@ upgrade_only = true
 ["ClementTsang/bottom"]
 asset_filters = ["musl"]
 file = "btm"
+target = "~/.local/bin/btm"
 ["It4innovations/hyperqueue"]
 asset_filters = ["hq"]
+target = "~/.local/bin/hq"
 ["NixOS/patchelf"]
 asset_filters = ["x86_64"]
 ["astral-sh/uv"]
@@ -16,10 +18,12 @@ asset_filters = ["musl"]
 ["carapace-sh/carapace-bin"]
 asset_filters = ["tar"]
 file = "carapace"
+target = "~/.local/bin/carapace"
 ["chmln/sd"]
 asset_filters = ["musl"]
 ["cli/cli"]
 asset_filters = ["tar"]
+target = "~/.local/bin/gh"
 ["dandavison/delta"]
 asset_filters = ["musl"]
 ["eza-community/eza"]
