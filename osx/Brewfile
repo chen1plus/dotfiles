@@ -68,14 +68,16 @@ cask 'pearcleaner'
 cask 'stats'
 cask 'typora'
 cask 'visual-studio-code'
+cask 'voiceink'
 cask 'zed'
 cask 'zoom'
 
-mas "Draw Things", id: 6444050820
-mas "LINE", id: 539883307
-mas "LocalSend", id: 1661733229
-mas "Microsoft Excel", id: 462058435
-mas "Microsoft PowerPoint", id: 462062816
-mas "Microsoft Word", id: 462054704
-mas "Telegram", id: 747648890
-mas "WireGuard", id: 1451685025
+mas 'Draw Things', id: 6444050820
+mas 'Hidden Bar', id: 1452453066
+mas 'LINE', id: 539883307
+mas 'LocalSend', id: 1661733229
+mas 'Microsoft Excel', id: 462058435
+mas 'Microsoft PowerPoint', id: 462062816
+mas 'Microsoft Word', id: 462054704
+mas 'Telegram', id: 747648890
+mas 'WireGuard', id: 1451685025
