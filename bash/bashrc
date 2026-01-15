@@ -11,52 +11,52 @@ alias ll='eza -al --group-directories-first'
 alias lt='eza -aTL 3 --group-directories-first'
 
 function alive {
-	while true; do
-		echo -n ';'
-		sleep 60
-	done
+  while true; do
+    echo -n ';'
+    sleep 60
+  done
 }
 
 mkdir -p ~/.cache/bolt
 function bolt-cache {
-	local bin=$1
-	local binf
-	local cfile
-	local cmd=$2
-	binf=$(command -v "$bin")
-	cfile="${3:-"$HOME/.cache/bolt/$bin"}"
+  local bin=$1
+  local binf
+  local cfile
+  local cmd=$2
+  binf=$(command -v "$bin")
+  cfile="${3:-"$HOME/.cache/bolt/$bin"}"
 
-	if [ ! -f "$cfile" ] || [ "$binf" -nt "$cfile" ]; then
-		eval "$cmd" >"$cfile"
-	fi
-	_ret_val=$cfile
+  if [ ! -f "$cfile" ] || [ "$binf" -nt "$cfile" ]; then
+    eval "$cmd" >"$cfile"
+  fi
+  _ret_val=$cfile
 }
 
 mkdir -p ~/.local/share/bash-completion/completions
 function bolt-complete {
-	if command -v "$1" >/dev/null; then
-		bolt-cache "$@" "$HOME/.local/share/bash-completion/completions/$1"
-	fi
+  if command -v "$1" >/dev/null; then
+    bolt-cache "$@" "$HOME/.local/share/bash-completion/completions/$1"
+  fi
 }
 
 function bolt-eval {
-	bolt-cache "${1%% *}" "$1"
-	# shellcheck disable=SC1090
-	source "$_ret_val"
+  bolt-cache "${1%% *}" "$1"
+  # shellcheck disable=SC1090
+  source "$_ret_val"
 }
 
 function hh {
-	"$@" --help | bat -pl help
+  "$@" --help | bat -pl help
 }
 
 function pbcopy {
-	tee >(base64 -w 0 | xargs printf "\e]52;c;%s\a" >&2)
+  tee >(base64 -w 0 | xargs printf "\e]52;c;%s\a" >&2)
 }
 
 while read -r line; do
-	[[ -z "$line" || "$line" =~ ^# ]] && continue
-	bolt-complete "${line%% *}" "$line"
-done <{{eget-pkg-completions}}
+  [[ -z "$line" || "$line" =~ ^# ]] && continue
+  bolt-complete "${line%% *}" "$line"
+done <'{{eget-pkg-completions}}'
 
 export FZF_DEFAULT_OPTS='--layout=reverse'
 bolt-eval 'carapace _carapace'

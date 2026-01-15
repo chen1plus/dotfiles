@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 if [ ! -f '{{eget-packages}}' ]; then
-	echo 'Package list not found: {{eget-packages}}'
-	exit 1
+  echo 'Package list not found: {{eget-packages}}'
+  exit 1
 fi
 
 while read -ru 3 repo; do
-	[[ -z "$repo" || "$repo" =~ ^# ]] && continue
-	eget "$repo"
+  [[ -z "$repo" || "$repo" =~ ^# ]] && continue
+  eget "$repo"
 done 3<'{{eget-packages}}'
