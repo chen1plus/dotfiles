@@ -8,9 +8,9 @@ source ~/.orbstack/shell/init2.fish
 alias cleanup 'sudo pacman -Rns (pacman -Qdtq)'
 alias update  'sudo pacman -Suy'
 {{/if}}
-{{#if (is_executable "wl-copy")}}
-alias pbcopy  'wl-copy'
-alias pbpaste 'wl-paste'
+{{#if (is_executable "dms")}}
+alias pbcopy  'dms clipboard copy'
+alias pbpaste 'dms clipboard paste'
 {{/if}}
 
 alias wget 'wget -c --no-hsts'
