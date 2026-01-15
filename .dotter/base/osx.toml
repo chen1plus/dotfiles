@@ -1,6 +1,3 @@
-[fish.variables]
-"greeting" = false
-
 [git.variables]
 "gh-binary" = "/opt/homebrew/bin/gh"
 
