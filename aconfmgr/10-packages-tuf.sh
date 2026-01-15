@@ -136,7 +136,6 @@ AddPackage openssh
 AddPackage otf-font-awesome
 AddPackage otf-geist-mono-nerd
 AddPackage otf-monaspace
-AddPackage otf-monaspace-nerdfonts
 AddPackage pacman-contrib
 AddPackage paru
 AddPackage pipewire-alsa
