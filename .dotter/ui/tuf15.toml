@@ -1,3 +1,8 @@
+[ghostty.variables]
+"ghostty-font-size" = 12.5
+"ghostty-padding-y" = "10"
+"ghostty-width" = false
+
 [zed.variables]
-"font-size" = 17
-"font-size-ui" = 17
+"zed-font-size" = 17
+"zed-font-size-ui" = 17

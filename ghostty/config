@@ -1,9 +1,14 @@
 adjust-cell-height = 20%
-font-family = "Monaspace Radon"
+app-notifications = no-clipboard-copy
+font-family = Monaspace Radon
 font-feature = calt, liga, ss01, ss02, ss03, ss04, ss05, ss06, ss07, ss08, ss09, ss10
-font-size = 17
+font-size = {{ghostty-font-size}}
+gtk-titlebar = false
 macos-option-as-alt = true
+mouse-hide-while-typing = true
 window-height = 32
 window-padding-x = 10
-window-padding-y = 0, 4
+window-padding-y = {{ghostty-padding-y}}
+{{#if ghostty-width}}
 window-width = 120
+{{/if}}
