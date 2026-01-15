@@ -1,2 +1,5 @@
 [fish.variables]
 "greeting" = true
+
+[git.variables]
+"gh-binary" = "/usr/bin/gh"
