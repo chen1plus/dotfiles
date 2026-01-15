@@ -5,6 +5,9 @@
 "bash/profile" = "~/.bash_profile"
 "bash/starship.toml" = "~/.config/starship.toml"
 
+[fastfetch.files]
+"fastfetch/config.jsonc" = "~/.config/fastfetch/config.jsonc"
+
 [fish.files]
 "fish/config.fish" = "~/.config/fish/config.fish"
 "fish/greeting.fish" = "~/.config/fish/functions/fish_greeting.fish"
