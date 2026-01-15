@@ -1,0 +1,6 @@
+IgnorePath '/.snapshots/*'
+IgnorePath '/boot/*'
+IgnorePath '/etc/*'
+IgnorePath '/opt/*'
+IgnorePath '/usr/*'
+IgnorePath '/var/*'
