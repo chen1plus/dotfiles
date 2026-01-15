@@ -6,12 +6,5 @@
   },
   "emojiLauncher": {
     "enabled": true
-  },
-  "niriWindows": {
-    "enabled": true
-  },
-  "webSearch": {
-    "enabled": true,
-    "searchEngines": []
   }
 }
