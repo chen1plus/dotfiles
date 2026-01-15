@@ -7,6 +7,10 @@
 
 [fish.files]
 "fish/config.fish" = "~/.config/fish/config.fish"
+[fish.files."fish/greeting.fish"]
+if = "greeting"
+target = "~/.config/fish/functions/fish_greeting.fish"
+type = "symbolic"
 
 [ghostty.files]
 "ghostty/config" = "~/.config/ghostty/config"

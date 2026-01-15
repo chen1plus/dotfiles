@@ -1,6 +1,16 @@
+{{#if (is_executable "brew")}}
 fish_add_path /opt/homebrew/opt/rustup/bin
+{{/if}}
 {{#if (is_executable "orb")}}
 source ~/.orbstack/shell/init2.fish
+{{/if}}
+{{#if (is_executable "pacman")}}
+alias cleanup 'sudo pacman -Rns (pacman -Qdtq)'
+alias update  'sudo pacman -Suy'
+{{/if}}
+{{#if (is_executable "wl-copy")}}
+alias pbcopy  'wl-copy'
+alias pbpaste 'wl-paste'
 {{/if}}
 
 alias wget 'wget -c --no-hsts'
