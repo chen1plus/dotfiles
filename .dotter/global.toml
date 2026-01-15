@@ -5,6 +5,11 @@
 "bash/profile" = "~/.bash_profile"
 "bash/starship.toml" = "~/.config/starship.toml"
 
+[dms.files]
+"dms/clsettings.json" = "~/.config/DankMaterialShell/clsettings.json"
+"dms/plugin_settings.json" = "~/.config/DankMaterialShell/plugin_settings.json"
+"dms/settings.json" = "~/.config/DankMaterialShell/settings.json"
+
 [fastfetch.files]
 "fastfetch/config.jsonc" = "~/.config/fastfetch/config.jsonc"
 

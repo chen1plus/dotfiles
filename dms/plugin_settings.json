@@ -1,0 +1,17 @@
+{
+  "calculator": {
+    "enabled": true,
+    "noTrigger": true,
+    "trigger": "="
+  },
+  "emojiLauncher": {
+    "enabled": true
+  },
+  "niriWindows": {
+    "enabled": true
+  },
+  "webSearch": {
+    "enabled": true,
+    "searchEngines": []
+  }
+}
