@@ -1,0 +1,9 @@
+layout {
+  always-center-single-column
+  border { on; width 1; }
+  default-column-width { proportion 0.5; }
+  empty-workspace-above-first
+  focus-ring { width 3; }
+  gaps 6
+  shadow { off; }
+}

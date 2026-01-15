@@ -1,0 +1,19 @@
+// chrome / chrome apps
+window-rule {
+  match app-id=r#"^chrome\-"#
+  match app-id="google-chrome"
+  scroll-factor 0.2
+}
+
+// gnome apps
+window-rule {
+  match app-id=r#"^org\.gnome\."#
+  clip-to-geometry true
+  draw-border-with-background false
+  geometry-corner-radius 12
+}
+
+window-rule {
+  match app-id=r#"^xdg-desktop-portal$"#
+  open-floating true
+}

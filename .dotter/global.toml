@@ -15,6 +15,13 @@
 [git.files]
 "git/config" = "~/.config/git/config"
 
+[niri.files]
+"niri/config.kdl" = "~/.config/niri/config.kdl"
+"niri/tuf/apps.kdl" = "~/.config/niri/tuf/apps.kdl"
+"niri/tuf/binds.kdl" = "~/.config/niri/tuf/binds.kdl"
+"niri/tuf/device.kdl" = "~/.config/niri/tuf/device.kdl"
+"niri/tuf/layout.kdl" = "~/.config/niri/tuf/layout.kdl"
+
 [sc.files]
 "sc/eget.toml" = "~/.eget.toml"
 "sc/eget-update" = "~/.local/bin/eget-update"
