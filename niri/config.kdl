@@ -5,7 +5,6 @@ gestures { hot-corners { off; }; }
 hotkey-overlay { skip-at-startup; }
 prefer-no-csd
 screenshot-path "~/Pictures/Screenshots/screenshot from %Y-%m-%d %H-%M-%S.png"
-spawn-sh-at-startup "wl-paste --watch cliphist store &"
 layer-rule { match namespace="^quickshell$"; place-within-backdrop true; }
 window-rule { match app-id=r#"org.quickshell$"#; open-floating true; }
 window-rule { match is-active=false; opacity 0.9; }
@@ -15,7 +14,7 @@ include "dms/binds.kdl"
 include "dms/colors.kdl"
 include "dms/layout.kdl"
 
-include "tufiles/apps.kdl"
-include "tufiles/binds.kdl"
-include "tufiles/device.kdl"
-include "tufiles/layout.kdl"
+include "tuf/apps.kdl"
+include "tuf/binds.kdl"
+include "tuf/device.kdl"
+include "tuf/layout.kdl"
