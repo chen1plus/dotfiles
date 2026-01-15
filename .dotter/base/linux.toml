@@ -1,2 +1,5 @@
 [git.variables]
 "gh-binary" = "/usr/bin/gh"
+
+[zellij.variables]
+"micro-binary" = "/usr/bin/micro"
