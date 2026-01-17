@@ -53,7 +53,6 @@ brew 'zellij'
 
 cask 'adguard'
 cask 'balenaetcher'
-cask 'cherry-studio'
 cask 'discord'
 cask 'font-monaspace'
 cask 'font-noto-sans-cjk-tc'
@@ -69,7 +68,6 @@ cask 'ollama-app'
 cask 'orbstack'
 cask 'pearcleaner'
 cask 'stats'
-cask 'swama'
 cask 'typora'
 cask 'visual-studio-code'
 cask 'voiceink'
@@ -77,6 +75,7 @@ cask 'zed'
 cask 'zoom'
 
 mas 'Draw Things', id: 6444050820
+mas 'Enchanted', id: 6474268307
 mas 'Hidden Bar', id: 1452453066
 mas 'LINE', id: 539883307
 mas 'LocalSend', id: 1661733229
