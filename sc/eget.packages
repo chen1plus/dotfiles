@@ -16,6 +16,7 @@ jqlang/jq
 junegunn/fzf
 koalaman/shellcheck
 muesli/duf
+pranshuparmar/witr
 prefix-dev/pixi
 sharkdp/bat
 sharkdp/fd
