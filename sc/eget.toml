@@ -2,6 +2,8 @@
 target = "~/.local/bin"
 upgrade_only = true
 
+["BurntSushi/ripgrep"]
+target = "~/.local/bin/rg"
 ["ClementTsang/bottom"]
 asset_filters = ["musl"]
 file = "btm"
