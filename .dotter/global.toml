@@ -5,14 +5,6 @@
 "bash/profile" = "~/.bash_profile"
 "bash/starship.toml" = "~/.config/starship.toml"
 
-[dms.files]
-"dms/clsettings.json" = "~/.config/DankMaterialShell/clsettings.json"
-"dms/plugin_settings.json" = "~/.config/DankMaterialShell/plugin_settings.json"
-"dms/settings.json" = "~/.config/DankMaterialShell/settings.json"
-
-[fastfetch.files]
-"fastfetch/config.jsonc" = "~/.config/fastfetch/config.jsonc"
-
 [fish.files]
 "fish/config.fish" = "~/.config/fish/config.fish"
 "fish/greeting.fish" = "~/.config/fish/functions/fish_greeting.fish"
@@ -22,13 +14,6 @@
 
 [git.files]
 "git/config" = "~/.config/git/config"
-
-[niri.files]
-"niri/config.kdl" = "~/.config/niri/config.kdl"
-"niri/tuf/apps.kdl" = "~/.config/niri/tuf/apps.kdl"
-"niri/tuf/binds.kdl" = "~/.config/niri/tuf/binds.kdl"
-"niri/tuf/device.kdl" = "~/.config/niri/tuf/device.kdl"
-"niri/tuf/layout.kdl" = "~/.config/niri/tuf/layout.kdl"
 
 [sc.files]
 "sc/eget.toml" = "~/.eget.toml"

@@ -1,14 +1,12 @@
 {
   "agent": {
-    "always_allow_tool_actions": true,
-    "default_model": {
-      "model": "claude-opus-4.5",
-      "provider": "copilot_chat",
-    },
+    "default_model": { "model": "gpt-5.2-codex", "provider": "copilot_chat" },
+    "tool_permissions": { "default": "allow" },
   },
+  "agent_servers": { "github-copilot": { "type": "registry" } },
   "autosave": { "after_delay": { "milliseconds": 600 } },
   "buffer_font_family": "Monaspace Radon",
-  "buffer_font_size": {{zed-font-size}},
+  "buffer_font_size": 18.5,
   "buffer_font_features": {
     "calt": true,
     "liga": true,
@@ -25,11 +23,11 @@
   },
   "collaboration_panel": { "button": false },
   "colorize_brackets": true,
-  "features": { "edit_prediction_provider": "copilot" },
+  "edit_predictions": { "provider": "copilot" },
   "git": { "inline_blame": { "enabled": false } },
   "languages": { "Rust": { "tab_size": 4 } },
   "notification_panel": { "button": false },
   "tab_size": 2,
   "telemetry": { "diagnostics": false, "metrics": false },
-  "ui_font_size": {{zed-font-size-ui}},
+  "ui_font_size": 18,
 }
