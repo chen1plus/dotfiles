@@ -22,6 +22,7 @@ prefix-dev/pixi
 sharkdp/bat
 sharkdp/fd
 sharkdp/hyperfine
+sigoden/argc
 starship/starship
 tealdeer-rs/tealdeer
 watchexec/watchexec
