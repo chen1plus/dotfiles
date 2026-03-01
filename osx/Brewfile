@@ -1,3 +1,4 @@
+brew 'argc'
 brew 'asciinema'
 brew 'bandwhich'
 brew 'bash'
