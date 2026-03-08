@@ -1,3 +1,2 @@
 dotter gen-completions -s bash
 hq generate-completion bash
-pixi completion -s bash
