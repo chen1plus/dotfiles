@@ -17,6 +17,7 @@
 [sc.files]
 "sc/eget.toml" = "~/.eget.toml"
 "sc/eget-update" = "~/.local/bin/eget-update"
+"sc/genmod" = "~/.local/bin/genmod"
 
 [zed.files]
 "zed/keymap.json" = "~/.config/zed/keymap.json"

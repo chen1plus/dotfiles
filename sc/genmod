@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+# shellcheck disable=SC2016
+# shellcheck disable=SC2154
+
+# @arg app!
+# @arg version!
+# @arg prefix!
+# @env GENMOD_DIR!
+
+eval "$(argc --argc-eval "$0" "$@")"
+function prepend {
+  [[ -d "$argc_prefix/$2" ]] && echo "prepend-path $1 \$root/$2"
+}
+
+modfile="$GENMOD_DIR/$argc_app/$argc_version"
+mkdir -p "$(dirname "$modfile")"
+{
+  echo '#%Module1.0'
+  echo "set root $argc_prefix"
+  echo "set version $argc_version"
+  echo 'prepend-path CMAKE_PREFIX_PATH $root'
+  prepend CPATH include
+  prepend PATH bin
+} >"$modfile"
+
+for lib in lib lib64; do
+  [[ -d "$argc_prefix/$lib" ]] && {
+    echo "prepend-path LD_LIBRARY_PATH \$root/$lib"
+    echo "prepend-path LIBRARY_PATH \$root/$lib"
+    prepend PKG_CONFIG_PATH $lib/pkgconfig
+  } >>"$modfile"
+done
+exit 0
