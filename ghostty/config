@@ -5,6 +5,7 @@ font-size = 18
 gtk-titlebar = false
 macos-option-as-alt = true
 mouse-hide-while-typing = true
+notify-on-command-finish = unfocused
 window-height = 32
 window-padding-x = 10
 window-padding-y = 0, 4
