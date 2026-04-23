@@ -3,7 +3,6 @@
 [bash.files]
 "bash/bashrc" = "~/.bashrc"
 "bash/profile" = "~/.bash_profile"
-"bash/starship.toml" = "~/.config/starship.toml"
 
 [fish.files]
 "fish/config.fish" = "~/.config/fish/config.fish"
