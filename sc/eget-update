@@ -1,10 +1,39 @@
 #!/usr/bin/env bash
-if [ ! -f '{{eget-packages}}' ]; then
-  echo 'Package list not found: {{eget-packages}}'
-  exit 1
-fi
 
-while read -ru 3 repo; do
-  [[ -z "$repo" || "$repo" =~ ^# ]] && continue
+packages=(
+  BurntSushi/ripgrep
+  ClementTsang/bottom
+  It4innovations/hyperqueue
+  NixOS/patchelf
+  SuperCuber/dotter
+  ajeetdsouza/zoxide
+  astral-sh/uv
+  bootandy/dust
+  carapace-sh/carapace-bin
+  casey/just
+  chmln/sd
+  cli/cli
+  dandavison/delta
+  denisidoro/navi
+  eza-community/eza
+  jqlang/jq
+  junegunn/fzf
+  koalaman/shellcheck
+  muesli/duf
+  pranshuparmar/witr
+  prefix-dev/pixi
+  sharkdp/bat
+  sharkdp/fd
+  sharkdp/hyperfine
+  sigoden/argc
+  starship/starship
+  tealdeer-rs/tealdeer
+  watchexec/watchexec
+  zellij-org/zellij
+  zyedidia/eget
+  zyedidia/micro
+)
+
+for repo in "${packages[@]}"; do
   eget "$repo"
-done 3<'{{eget-packages}}'
+done

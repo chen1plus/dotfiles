@@ -2,7 +2,6 @@
 "gh-binary" = "/home/chen1plus/.local/bin/gh"
 
 [sc.variables]
-"eget-packages" = "/home/chen1plus/dotfiles/sc/eget.packages"
 "eget-pkg-completions" = "/home/chen1plus/dotfiles/sc/eget.pkg.completions"
 
 [zellij.variables]
