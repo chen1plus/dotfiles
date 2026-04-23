@@ -1,9 +1,71 @@
 {
+  "ssh_connections": [
+    {
+      "host": "iris.hpc",
+      "args": [],
+      "projects": [
+        {
+          "paths": [
+            "/global/home/users/rdmaworkshop09"
+          ]
+        },
+        {
+          "paths": [
+            "/global/home/users/rdmaworkshop09/chen1plus"
+          ]
+        }
+      ]
+    },
+    {
+      "host": "romeo.hpc",
+      "args": [],
+      "projects": [
+        {
+          "paths": [
+            "/home/r250119-u14"
+          ]
+        },
+        {
+          "paths": [
+            "/home/r250119-u14/chen1plus"
+          ]
+        }
+      ]
+    },
+    {
+      "host": "orb",
+      "username": "fedora",
+      "args": [],
+      "projects": [
+        {
+          "paths": [
+            "/home/chen1plus/linux"
+          ]
+        }
+      ],
+      "nickname": "fedora"
+    },
+    {
+      "host": "f1.tw",
+      "args": [],
+      "projects": []
+    }
+  ],
   "agent": {
-    "default_model": { "model": "gpt-5.2-codex", "provider": "copilot_chat" },
+    "dock": "left",
+    "default_profile": "write",
+    "default_model": {
+      "effort": "medium",
+      "enable_thinking": true,
+      "model": "gemini-3.1-pro-preview",
+      "provider": "copilot_chat",
+    },
     "tool_permissions": { "default": "allow" },
   },
-  "agent_servers": { "github-copilot": { "type": "registry" } },
+  "agent_servers": {
+    "claude-acp": { "type": "registry" },
+    "github-copilot": { "type": "registry" },
+  },
   "autosave": { "after_delay": { "milliseconds": 600 } },
   "buffer_font_family": "Monaspace Radon",
   "buffer_font_size": 18.5,
@@ -23,10 +85,13 @@
   },
   "collaboration_panel": { "button": false },
   "colorize_brackets": true,
-  "edit_predictions": { "provider": "copilot" },
+  "edit_predictions": { "mode": "subtle", "provider": "copilot" },
   "git": { "inline_blame": { "enabled": false } },
+  "git_panel": { "dock": "right" },
   "languages": { "Rust": { "tab_size": 4 } },
-  "notification_panel": { "button": false },
+  "lsp": { "tinymist": { "settings": { "formatterMode": "typstyle" } } },
+  "outline_panel": { "dock": "right" },
+  "project_panel": { "dock": "right" },
   "tab_size": 2,
   "telemetry": { "diagnostics": false, "metrics": false },
   "ui_font_size": 18,
